@@ -1,0 +1,123 @@
+/* Please define your custom styles here */
+
+/* background and text color */
+body{ 
+  background-color: white; //#424242
+  color: black;
+}
+
+.header1 {
+  padding: 0px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* borders */
+.container{
+  border-style: none;
+}
+header{
+  border-style: none;
+}
+main{
+  border-style: none;
+}
+footer{
+  background-color:white;
+  color: black;
+  border-style: none;
+}
+
+/* Bullet points for list */
+li::before{
+  color: black;
+}
+
+/* Button */
+button {
+  background-color:grey;
+}
+button:hover {
+  /* background-color: #0084db; */
+  background-color: #3c78d8;
+  color:black;
+}
+
+/* slider/VAS style */
+/* slider container */
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 50%; /* Full-width */
+  height: 30px; /* Specified height */
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 5px;
+  background: grey; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  border-radius: 50%;
+  /* background: #4CAF50; /* Green background */
+  background: #3c78d8; /* Cornflower blue background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  border-radius: 50%;
+  /* background: #4CAF50; /* Green background */
+  background: #3c78d8; /* Cornflower blue backgroud */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
+/* slider labels divisions */
+div.labelL{
+  float: left;
+  position: relative;
+  left: 12.5%;
+  width: 25%;
+}
+div.labelR{
+  float: right;
+  position: relative;
+  right: 12.5%;
+  width: 25%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.notbold{
+    font-weight:normal
+}​
+
+#hp  {
+float: none;    
+ margin: 0 15px 0 0;
+}
