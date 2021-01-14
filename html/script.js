@@ -23605,7 +23605,7 @@ this.end();
 }
       },
       "title": "End",
-      "content": "\u003Cmain class=\"content-horizontal-center content-vertical-center\"\u003E\n  \u003Cdiv\u003E\n  The study is now over. Thank you for your participation! \u003Cbr\u003E\u003Cbr\u003E\n  Please copy and paste the following code to Prolific to receive your compensation: \u003Cbr\u003E\u003Cbr\u003E\n  \u003Cb\u003E3E6D2810\u003C\u002Fb\u003E \u003Cbr\u003E\u003Cbr\u003E\u003Cbr\u003E\n  Once your participation has been confirmed on Prolific, you can close this window. \u003Cbr\u003E\u003Cbr\u003E\n  For any question or problem relative to this study, please contact the researcher in charge\u003Cbr\u003E of this project at the following email address: \u003Ca href=\"mailto:alessio.giarrizzo@unige.ch\"\u003Ealessio.giarrizzo@unige.ch\u003C\u002Fa\u003E\n  \u003C\u002Fdiv\u003E\n\u003C\u002Fmain\u003E",
+      "content": "\u003Cmain class=\"content-horizontal-center content-vertical-center\"\u003E\n  \u003Cdiv\u003E\n  The study is now over. Thank you for your participation! \u003Cbr\u003E\u003Cbr\u003E\n  Please copy and paste the following code to Prolific to receive your compensation: \u003Cbr\u003E\u003Cbr\u003E\n  \u003Cb\u003E8E8DFDAB\u003C\u002Fb\u003E \u003Cbr\u003E\u003Cbr\u003E\u003Cbr\u003E\n  Once your participation has been confirmed on Prolific, you can close this window. \u003Cbr\u003E\u003Cbr\u003E\n  For any question or problem relative to this study, please contact the researcher in charge\u003Cbr\u003E of this project at the following email address: \u003Ca href=\"mailto:alessio.giarrizzo@unige.ch\"\u003Ealessio.giarrizzo@unige.ch\u003C\u002Fa\u003E\n  \u003C\u002Fdiv\u003E\n\u003C\u002Fmain\u003E",
       "timeout": "1000"
     }
   ]
