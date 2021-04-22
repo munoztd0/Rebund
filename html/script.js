@@ -29,7 +29,7 @@ const study = lab.util.fromObject({
         {
           "required": true,
           "type": "html",
-          "content": "\u003Cmain\u003E\n  \u003Cdiv style=\"margin-left: -50%; margin-right: -50%; border-style: solid; border-width: 2px; padding: 15px; font-size: 20px\"\u003E\n    \u003Cp\u003E\u003Cb\u003EStudy title:\u003C\u002Fb\u003E Study of Food Preferences\u003C\u002Fp\u003E\n    \u003Cp\u003E\u003Cb\u003ELaboratory:\u003C\u002Fb\u003E Laboratory for the study Emotion Elicitation and Expression (E3Lab)\u003C\u002Fp\u003E\n    \u003Cp\u003E\u003Cb\u003EVersion Date:\u003C\u002Fb\u003E 13\u002F01\u002F2021\u003C\u002Fp\u003E\n  \u003C\u002Fdiv\u003E\u003Cbr\u003E\n\u003C\u002Fmain\u003E",
+          "content": "\u003Cmain\u003E\n  \u003Cdiv style=\"margin-left: -50%; margin-right: -50%; border-style: solid; border-width: 2px; padding: 15px; font-size: 20px\"\u003E\n    \u003Cp\u003E\u003Cb\u003EStudy title:\u003C\u002Fb\u003E Study of Food Preferences\u003C\u002Fp\u003E\n    \u003Cp\u003E\u003Cb\u003ELaboratory:\u003C\u002Fb\u003E Laboratory for the study Emotion Elicitation and Expression (E3Lab)\u003C\u002Fp\u003E\n    \u003Cp\u003E\u003Cb\u003EVersion Date:\u003C\u002Fb\u003E 22\u002F04\u002F2021\u003C\u002Fp\u003E\n  \u003C\u002Fdiv\u003E\u003Cbr\u003E\n\u003C\u002Fmain\u003E",
           "name": ""
         }
       ],
@@ -58,8 +58,7 @@ const study = lab.util.fromObject({
       },
       "parameters": {},
       "messageHandlers": {
-        "run": function anonymous(
-) {
+        "run": function anonymous() {
 // MTURK OR PROLIFIC INFO
 if (typeof jatos !== "undefined"){
   // mturk
@@ -319,8 +318,7 @@ this.data.os = OSName;
               },
               "parameters": {},
               "messageHandlers": {
-                "before:prepare": function anonymous(
-) {
+                "before:prepare": function anonymous() {
 
 
 this.parameters.skip = this.state.snack == 1 //salt = 1
@@ -523,8 +521,7 @@ this.parameters.skip = this.state.snack == 1 //salt = 1
                         },
                         "parameters": {},
                         "messageHandlers": {
-                          "before:prepare": function anonymous(
-) {
+                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = [this.parameters.img];
@@ -550,8 +547,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                     "": ""
                   },
                   "messageHandlers": {
-                    "run": function anonymous(
-) {
+                    "run": function anonymous() {
 const transmitPlugins = this.parents[0].plugins.plugins
   .filter(p => p instanceof lab.plugins.Transmit)
 
@@ -601,8 +597,7 @@ if (transmitPlugins.length > 0) {
                     "": ""
                   },
                   "messageHandlers": {
-                    "before:prepare": function anonymous(
-) {
+                    "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["void.png", "choice.png", "selected.png", "choicehands.png"];
@@ -699,8 +694,7 @@ this.options.events['keypress(Space)'] = function() {
                       },
                       "parameters": {},
                       "messageHandlers": {
-                        "before:prepare": function anonymous(
-) {
+                        "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 pracQ1_imgArray = ["same.png"];
@@ -804,8 +798,7 @@ this.options.events['keydown(ArrowLeft)'] = function(){
                       },
                       "parameters": {},
                       "messageHandlers": {
-                        "before:prepare": function anonymous(
-) {
+                        "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 pracQ2_imgArray = ["choice.png"];
@@ -901,8 +894,7 @@ this.options.events['keydown(ArrowLeft)'] = function(){
                       },
                       "parameters": {},
                       "messageHandlers": {
-                        "before:prepare": function anonymous(
-) {
+                        "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 pracQ4_imgArray = ["diff.png"];
@@ -1005,8 +997,7 @@ this.options.events['keydown(ArrowLeft)'] = function(){
                       },
                       "parameters": {},
                       "messageHandlers": {
-                        "before:prepare": function anonymous(
-) {
+                        "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 pracQ5_imgArray = ["selectedtest.png"];
@@ -1108,8 +1099,7 @@ this.options.events['keydown(ArrowLeft)'] = function(){
                   },
                   "parameters": {},
                   "messageHandlers": {
-                    "before:prepare": function anonymous(
-) {
+                    "before:prepare": function anonymous() {
 let done = false // is it the last screen?
 
 const setVisibility = (selector, isVisible) => {
@@ -1179,8 +1169,7 @@ this.options.events['keypress(Space)'] = function() {
                   },
                   "parameters": {},
                   "messageHandlers": {
-                    "before:prepare": function anonymous(
-) {
+                    "before:prepare": function anonymous() {
 // initialize trial counter
 this.state.trial_count = 0;
 this.state.trial_countO = 0;
@@ -1359,8 +1348,7 @@ this.state.trial_countO = 0;
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 debugger
 
 function getValueIndex(value, array){
@@ -1420,8 +1408,7 @@ Image_B = this.parameters.ImgB
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -1725,8 +1712,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -2222,8 +2208,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -2755,8 +2740,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -3259,8 +3243,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -3327,8 +3310,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -3505,8 +3487,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -3522,8 +3503,7 @@ this.parameters.ImgB = Image_B
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -3827,8 +3807,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -4324,8 +4303,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -4857,8 +4835,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -5361,8 +5338,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -5429,8 +5405,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -5507,8 +5482,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                 },
                                 "parameters": {},
                                 "messageHandlers": {
-                                  "before:prepare": function anonymous(
-) {
+                                  "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -5524,8 +5498,7 @@ this.parameters.ImgB = Image_B
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -5834,8 +5807,7 @@ switch(this.parameters.list) {
                                         "": ""
                                       },
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -6332,8 +6304,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                       "parameters": {},
                                       "responses": {},
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -6865,8 +6836,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                         "keydown(ArrowRight)": "right"
                                       },
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -7370,8 +7340,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                       "parameters": {},
                                       "responses": {},
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -7438,8 +7407,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                         "": ""
                                       },
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -7615,8 +7583,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -7632,8 +7599,7 @@ this.parameters.ImgB = Image_B
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -7937,8 +7903,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -8434,8 +8399,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -8967,8 +8931,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -9471,8 +9434,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -9539,8 +9501,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -9717,8 +9678,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -9734,8 +9694,7 @@ this.parameters.ImgB = Image_B
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -10039,8 +9998,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -10536,8 +10494,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -11069,8 +11026,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -11573,8 +11529,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -11641,8 +11596,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -11678,7 +11632,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                           "type": "lab.html.Screen",
                           "files": {},
                           "responses": {
-                            "keydown(Space)": "continue"
+                            "keydown(ArrowRight)": "continue"
                           },
                           "parameters": {},
                           "messageHandlers": {},
@@ -11696,8 +11650,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                             "": ""
                           },
                           "messageHandlers": {
-                            "run": function anonymous(
-) {
+                            "run": function anonymous() {
 const transmitPlugins = this.parents[0].plugins.plugins
   .filter(p => p instanceof lab.plugins.Transmit)
 
@@ -11923,8 +11876,7 @@ if (transmitPlugins.length > 0) {
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 debugger
 
 function getValueIndex(value, array){
@@ -11984,8 +11936,7 @@ Image_B = this.parameters.ImgB
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -12289,8 +12240,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -12786,8 +12736,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -13319,8 +13268,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -13823,8 +13771,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -13891,8 +13838,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -14069,8 +14015,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -14086,8 +14031,7 @@ this.parameters.ImgB = Image_B
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -14391,8 +14335,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -14888,8 +14831,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -15421,8 +15363,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -15925,8 +15866,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -15993,8 +15933,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -16071,8 +16010,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                 },
                                 "parameters": {},
                                 "messageHandlers": {
-                                  "before:prepare": function anonymous(
-) {
+                                  "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -16088,8 +16026,7 @@ this.parameters.ImgB = Image_B
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -16398,8 +16335,7 @@ switch(this.parameters.list) {
                                         "": ""
                                       },
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -16896,8 +16832,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                       "parameters": {},
                                       "responses": {},
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -17429,8 +17364,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                         "keydown(ArrowRight)": "right"
                                       },
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -17934,8 +17868,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                       "parameters": {},
                                       "responses": {},
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -18002,8 +17935,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                         "": ""
                                       },
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -18179,8 +18111,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -18196,8 +18127,7 @@ this.parameters.ImgB = Image_B
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -18501,8 +18431,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -18998,8 +18927,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -19531,8 +19459,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -20035,8 +19962,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -20103,8 +20029,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -20281,8 +20206,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -20298,8 +20222,7 @@ this.parameters.ImgB = Image_B
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -20603,8 +20526,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -21100,8 +21022,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -21633,8 +21554,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -22137,8 +22057,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -22205,8 +22124,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -22263,8 +22181,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
               },
               "parameters": {},
               "messageHandlers": {
-                "before:prepare": function anonymous(
-) {
+                "before:prepare": function anonymous() {
 
 
 this.parameters.skip = this.state.snack == 0 //sweet = 0
@@ -22468,8 +22385,7 @@ this.parameters.skip = this.state.snack == 0 //sweet = 0
                         },
                         "parameters": {},
                         "messageHandlers": {
-                          "before:prepare": function anonymous(
-) {
+                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = [this.parameters.img];
@@ -22495,8 +22411,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                     "": ""
                   },
                   "messageHandlers": {
-                    "run": function anonymous(
-) {
+                    "run": function anonymous() {
 const transmitPlugins = this.parents[0].plugins.plugins
   .filter(p => p instanceof lab.plugins.Transmit)
 
@@ -22546,8 +22461,7 @@ if (transmitPlugins.length > 0) {
                     "": ""
                   },
                   "messageHandlers": {
-                    "before:prepare": function anonymous(
-) {
+                    "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["void.png", "choice.png", "selected.png", "choicehands.png"];
@@ -22644,8 +22558,7 @@ this.options.events['keypress(Space)'] = function() {
                       },
                       "parameters": {},
                       "messageHandlers": {
-                        "before:prepare": function anonymous(
-) {
+                        "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 pracQ1_imgArray = ["same.png"];
@@ -22749,8 +22662,7 @@ this.options.events['keydown(ArrowLeft)'] = function(){
                       },
                       "parameters": {},
                       "messageHandlers": {
-                        "before:prepare": function anonymous(
-) {
+                        "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 pracQ2_imgArray = ["choice.png"];
@@ -22846,8 +22758,7 @@ this.options.events['keydown(ArrowLeft)'] = function(){
                       },
                       "parameters": {},
                       "messageHandlers": {
-                        "before:prepare": function anonymous(
-) {
+                        "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 pracQ4_imgArray = ["diff.png"];
@@ -22950,8 +22861,7 @@ this.options.events['keydown(ArrowLeft)'] = function(){
                       },
                       "parameters": {},
                       "messageHandlers": {
-                        "before:prepare": function anonymous(
-) {
+                        "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 pracQ5_imgArray = ["selectedtest.png"];
@@ -23053,8 +22963,7 @@ this.options.events['keydown(ArrowLeft)'] = function(){
                   },
                   "parameters": {},
                   "messageHandlers": {
-                    "before:prepare": function anonymous(
-) {
+                    "before:prepare": function anonymous() {
 let done = false // is it the last screen?
 
 const setVisibility = (selector, isVisible) => {
@@ -23124,8 +23033,7 @@ this.options.events['keypress(Space)'] = function() {
                   },
                   "parameters": {},
                   "messageHandlers": {
-                    "before:prepare": function anonymous(
-) {
+                    "before:prepare": function anonymous() {
 // initialize trial counter
 this.state.trial_count = 0;
 this.state.trial_countO = 0;
@@ -23304,8 +23212,7 @@ this.state.trial_countO = 0;
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 debugger
 
 function getValueIndex(value, array){
@@ -23365,8 +23272,7 @@ Image_B = this.parameters.ImgB
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -23670,8 +23576,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -24167,8 +24072,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -24700,8 +24604,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -25204,8 +25107,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -25272,8 +25174,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -25450,8 +25351,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -25467,8 +25367,7 @@ this.parameters.ImgB = Image_B
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -25772,8 +25671,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -26269,8 +26167,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -26820,8 +26717,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -27342,8 +27238,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -27410,8 +27305,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -27488,8 +27382,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                 },
                                 "parameters": {},
                                 "messageHandlers": {
-                                  "before:prepare": function anonymous(
-) {
+                                  "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -27505,8 +27398,7 @@ this.parameters.ImgB = Image_B
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -27815,8 +27707,7 @@ switch(this.parameters.list) {
                                         "": ""
                                       },
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -28331,8 +28222,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                       "parameters": {},
                                       "responses": {},
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -28882,8 +28772,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                         "keydown(ArrowRight)": "right"
                                       },
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -29405,8 +29294,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                       "parameters": {},
                                       "responses": {},
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -29473,8 +29361,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                         "": ""
                                       },
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -29650,8 +29537,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -29667,8 +29553,7 @@ this.parameters.ImgB = Image_B
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -29972,8 +29857,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -30487,8 +30371,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -31038,8 +30921,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -31560,8 +31442,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -31628,8 +31509,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -31806,8 +31686,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -31823,8 +31702,7 @@ this.parameters.ImgB = Image_B
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -32128,8 +32006,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -32643,8 +32520,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -33194,8 +33070,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -33716,8 +33591,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -33784,8 +33658,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -33821,7 +33694,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                           "type": "lab.html.Screen",
                           "files": {},
                           "responses": {
-                            "keydown(Space)": "continue"
+                            "keydown(ArrowRight)": "continue"
                           },
                           "parameters": {},
                           "messageHandlers": {},
@@ -33839,8 +33712,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                             "": ""
                           },
                           "messageHandlers": {
-                            "run": function anonymous(
-) {
+                            "run": function anonymous() {
 const transmitPlugins = this.parents[0].plugins.plugins
   .filter(p => p instanceof lab.plugins.Transmit)
 
@@ -34066,8 +33938,7 @@ if (transmitPlugins.length > 0) {
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 debugger
 
 function getValueIndex(value, array){
@@ -34127,8 +33998,7 @@ Image_B = this.parameters.ImgB
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -34432,8 +34302,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -34929,8 +34798,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -35462,8 +35330,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -35966,8 +35833,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -36034,8 +35900,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -36212,8 +36077,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -36229,8 +36093,7 @@ this.parameters.ImgB = Image_B
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -36534,8 +36397,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -37031,8 +36893,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -37582,8 +37443,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -38104,8 +37964,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -38172,8 +38031,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -38250,8 +38108,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                 },
                                 "parameters": {},
                                 "messageHandlers": {
-                                  "before:prepare": function anonymous(
-) {
+                                  "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -38267,8 +38124,7 @@ this.parameters.ImgB = Image_B
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -38577,8 +38433,7 @@ switch(this.parameters.list) {
                                         "": ""
                                       },
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -39093,8 +38948,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                       "parameters": {},
                                       "responses": {},
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -39644,8 +39498,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                         "keydown(ArrowRight)": "right"
                                       },
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -40167,8 +40020,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                       "parameters": {},
                                       "responses": {},
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -40235,8 +40087,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                         "": ""
                                       },
                                       "messageHandlers": {
-                                        "before:prepare": function anonymous(
-) {
+                                        "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -40412,8 +40263,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -40429,8 +40279,7 @@ this.parameters.ImgB = Image_B
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -40734,8 +40583,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -41249,8 +41097,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -41800,8 +41647,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -42322,8 +42168,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -42390,8 +42235,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -42568,8 +42412,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                   },
                                   "parameters": {},
                                   "messageHandlers": {
-                                    "before:prepare": function anonymous(
-) {
+                                    "before:prepare": function anonymous() {
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
 }
@@ -42585,8 +42428,7 @@ this.parameters.ImgB = Image_B
                                     },
                                     "parameters": {},
                                     "messageHandlers": {
-                                      "before:prepare": function anonymous(
-) {
+                                      "before:prepare": function anonymous() {
 
 
 this.parameters.Blank = "blank.png"
@@ -42890,8 +42732,7 @@ switch(this.parameters.list) {
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // update trial counter
 this.state.trial_count = this.state.trial_count + 1;
 
@@ -43405,8 +43246,7 @@ this.state.trial_count = this.state.trial_count + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 debugger
 // create image array
 inst_imgArray = [this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -43956,8 +43796,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "keydown(ArrowRight)": "right"
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 // PRELOAD IMAGES
 // create image array
 inst_imgArray = ["KeyLeft.png", "KeyRight.png", this.parameters.LeftBar, this.parameters.RightBar, this.parameters.ImgA, this.parameters.ImgB, "blank.png"];
@@ -44478,8 +44317,7 @@ this.state.trial_countO = this.state.trial_countO + 1;
                                         "parameters": {},
                                         "responses": {},
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 
 if(this.options.datastore.extract('response', 'choice')[this.state.trial_count-1]== "left"){
@@ -44546,8 +44384,7 @@ this.options.media.images = inst_imgArray.map(image => this.files[image]);
                                           "": ""
                                         },
                                         "messageHandlers": {
-                                          "before:prepare": function anonymous(
-) {
+                                          "before:prepare": function anonymous() {
 
 // late response (> 5000ms)
 if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1]>5000){
@@ -44609,8 +44446,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
             "": ""
           },
           "messageHandlers": {
-            "run": function anonymous(
-) {
+            "run": function anonymous() {
 const transmitPlugins = this.parents[0].plugins.plugins
   .filter(p => p instanceof lab.plugins.Transmit)
 
@@ -44730,8 +44566,7 @@ if (transmitPlugins.length > 0) {
           },
           "parameters": {},
           "messageHandlers": {
-            "before:prepare": function anonymous(
-) {
+            "before:prepare": function anonymous() {
 // RANDOMIZE RESPONSE OPTIONS
 this.parameters.ImgA = Image_A
 this.parameters.ImgB = Image_B
@@ -44835,8 +44670,7 @@ this.parameters.attCheck_fileD = attCheck_order[3].file;
         "": ""
       },
       "messageHandlers": {
-        "run": function anonymous(
-) {
+        "run": function anonymous() {
 const transmitPlugins = this.parents[0].plugins.plugins
   .filter(p => p instanceof lab.plugins.Transmit)
 
@@ -44878,8 +44712,7 @@ if (transmitPlugins.length > 0) {
       },
       "parameters": {},
       "messageHandlers": {
-        "run": function anonymous(
-) {
+        "run": function anonymous() {
 this.end();
 }
       },
