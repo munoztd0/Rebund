@@ -14,7 +14,7 @@ const study = lab.util.fromObject({
     }
   ],
   "metadata": {
-    "title": "REBUND_v1",
+    "title": "REBUND_v2",
     "description": "In this experiment, participants are asked to make decisions between several sets of snacks according to their food preferences. After completing the task, we ask them to answer some questions about the task itself, and to fill out some questionnaires.\nThe whole experiment takes for about 30 minutes. Participants receive a compensation of 10 Swiss francs (converted to the currency used by Prolific.co) for their participation.",
     "repository": "https:\u002F\u002Fgitlab.pavlovia.org\u002FE3lab\u002Frebund",
     "contributors": "David Munoz Tord \u003Cdavid.munoz@etu.unige.ch\u003E (https:\u002F\u002Fwww.unige.ch\u002Ffapse\u002Fe3lab\u002Fmembers1\u002Fphd-candidates\u002Fdavid-munoz-tord)\nAlessio Giarrizzo \u003Calessio.giarrizzo@unige.ch\u003E (https:\u002F\u002Fwww.unige.ch\u002Ffapse\u002Fe3lab\u002Fmembers1\u002Fphd-candidates\u002Falessio-giarrizzo\u002F)\nYoann Stussi \u003Cystussi@fas.harvard.edu\u003E (https:\u002F\u002Fphelpslab.com\u002Fyoann-stussi)"
@@ -29,7 +29,7 @@ const study = lab.util.fromObject({
         {
           "required": true,
           "type": "html",
-          "content": "\u003Cmain\u003E\n  \u003Cdiv style=\"margin-left: -50%; margin-right: -50%; border-style: solid; border-width: 2px; padding: 15px; font-size: 20px\"\u003E\n    \u003Cp\u003E\u003Cb\u003EStudy title:\u003C\u002Fb\u003E Study of Food Preferences\u003C\u002Fp\u003E\n    \u003Cp\u003E\u003Cb\u003ELaboratory:\u003C\u002Fb\u003E Laboratory for the study Emotion Elicitation and Expression (E3Lab)\u003C\u002Fp\u003E\n    \u003Cp\u003E\u003Cb\u003EVersion Date:\u003C\u002Fb\u003E 22\u002F04\u002F2021\u003C\u002Fp\u003E\n  \u003C\u002Fdiv\u003E\u003Cbr\u003E\n\u003C\u002Fmain\u003E",
+          "content": "\u003Cmain\u003E\n  \u003Cdiv style=\"margin-left: -50%; margin-right: -50%; border-style: solid; border-width: 2px; padding: 15px; font-size: 20px\"\u003E\n    \u003Cp\u003E\u003Cb\u003EStudy title:\u003C\u002Fb\u003E Study of Food Preferences\u003C\u002Fp\u003E\n    \u003Cp\u003E\u003Cb\u003ELaboratory:\u003C\u002Fb\u003E Laboratory for the study Emotion Elicitation and Expression (E3Lab)\u003C\u002Fp\u003E\n    \u003Cp\u003E\u003Cb\u003EVersion Date:\u003C\u002Fb\u003E 30\u002F04\u002F2021\u003C\u002Fp\u003E\n  \u003C\u002Fdiv\u003E\u003Cbr\u003E\n\u003C\u002Fmain\u003E",
           "name": ""
         }
       ],
@@ -202,7 +202,7 @@ this.data.os = OSName;
       "content": [
         {
           "type": "lab.html.Form",
-          "content": "\u003Cmain style=\"width: 60%; margin: auto; text-align: left\"\u003E\n  \u003Cdiv\u003E\n      \u003Cimg src=\"${ this.files['section_psy_noir.png'] }\" style=\"width: 200px; height: 100px\" id=\"hp\"\u002F\u003E\u003C\u002Fimg\u003E\n\t\u003C\u002Fdiv\u003E\n\t  \u003Cdiv\u003E\n\t    \u003Cstrong\u003ERESEARCH\u003C\u002Fstrong\u003E\u003Cbr\u003E\n        Study of Food Preferences\u003Cbr\u003E\n\t\t\u003Cbr\u003E\n\t    \u003Cstrong\u003EIN CHARGE OF THE RESEARCH\u003C\u002Fstrong\u003E\u003Cbr\u003E\n        Prof. David Sander, Full Professor\u003Cbr\u003E\n        Dr. Eva Pool, Senior Researcher and Lecturer\u003Cbr\u003E\n        Alessio Giarrizzo, PhD Student and Teaching Assistant\u003Cbr\u003E\n        Department of Psychology, University of Geneva\u003Cbr\u003E\n\t\t\t\tLaboratory for the Study of Emotion Elicitation and Expression \u003Cbr\u003E\n\t\t\t\tBoulevard du Pont-d'Arve 40, 1205 Geneva, Switzerland\u003Cbr\u003E\n\t\t\u003Cbr\u003E\n\t\t\u003Cbr\u003E\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cdiv\u003E\n\t\t\u003Cstrong\u003EINFORMATION TO PARTICIPANTS AND PARTICIPATION CONSENT\u003C\u002Fstrong\u003E\u003Cbr\u003E\n\t    \u003Cbr\u003E\n\t\t\u003Cbr\u003E\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cdiv\u003E\n\t\t\u003Cstrong\u003EInformation to Participants\u003C\u002Fstrong\u003E\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cdiv\u003E\n\t\t\u003Cp\u003E\u003Cstrong\u003EGeneral aims of the research:\u003C\u002Fstrong\u003E measuring food preferences through choices.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003EProcedure: the study consists of four phases:\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cul\u003E\n\t\t\t\u003Cli\u003EIn the first phase, you will be asked several personal information. \u003C\u002Fli\u003E\n\t\n\t\t\t\u003Cli\u003EIn the second phase, we will present you a set of food items that you will have to evaluate according to your preferences;\u003C\u002Fli\u003E\n\t\t\t\n\t\t\t\u003Cli\u003EIn the third phase, you will perform a task consisting of choices between different snacks composed of the food items you will have evaluated in the second phase;\u003C\u002Fli\u003E\n\t\t\t\n\t\t\t\u003Cli\u003EIn the fourth and final phase, you will answer a set of questions about your emotions and food habits.\u003C\u002Fli\u003E\n\t\t\t\n\t    \u003C\u002Ful\u003E\n\t\t\n\t\t\u003Cp\u003EThe total duration of the experiment is approximately 40 minutes. However, you can choose to terminate the experiment at any moment without giving any justification.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003E\u003Cstrong\u003EData protection:\u003C\u002Fstrong\u003E your answers will be recorded and stored in a completely anonymous manner on a British server belonging to the Open Science Ltd. company. This company is committed to not sharing your data with any third party, and their data storage methods are compliant with the European General Data Protection Regulation (GDPR). Moreover, Open Science Ltd. will collect your IP address on temporary files which allow for the proper functioning of the servers. However, be aware that we will not have access to that information and that there is no way to link this information with the data we will be collecting during the experiment. The data we will collect will be exclusively accessible to the people listed in the section \u003Cstrong\u003EIN CHARGE OF THE RESEARCH\u003C\u002Fstrong\u003E; as well as to the server administrators. These data will subsequently be transferred to a server hosted in the University of Geneva, inside the Swiss Centre for Affective Sciences; and will be deleted from the British server within 3 months after the end of data collection. The data will then be stored indefinitely in the University. They can be reused in future research and uploaded on collaborative (“open science”) research platforms so as to be shared with other researchers. Since the data are completely anonymous, no link can be established between them and your personal identity.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003E\u003Cstrong\u003ECompensation for participants:\u003C\u002Fstrong\u003E you will receive a monetary compensation of 12.50 Swiss Francs for the duration of the experiment, converted to the currency used by the platform Prolific.co.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003E\u003Cstrong\u003EInconvenience and potential risks for the participants:\u003C\u002Fstrong\u003E we do not think that this experiment would result in any risk for your health.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003E\u003Cstrong\u003EAccess to the research outcomes:\u003C\u002Fstrong\u003E in the event you would be interested in the results of this research, you can contact the people listed below from May 1st, 2021.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003E\u003Cstrong\u003EContacts:\u003C\u002Fstrong\u003E Prof. David Sander (\u003Ca href=\"mailto:david.sander@unige.ch\"\u003Edavid.sander@unige.ch\u003C\u002Fa\u003E), Dr. Eva Pool (\u003Ca href=\"mailto:eva.pool@unige.ch\"\u003Eeva.pool@unige.ch\u003C\u002Fa\u003E), Alessio Giarrizzo (\u003Ca href=\"mailto:alessio.giarrizzo@unige.ch\"\u003Ealessio.giarrizzo@unige.ch\u003C\u002Fa\u003E).\u003C\u002Fp\u003E\n\t\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cbr\u003E\n\t\u003Cbr\u003E\n\t\n\t\u003Cdiv\u003E\n\t    \u003Cstrong\u003EParticipation Consent\u003C\u002Fstrong\u003E\u003Cbr\u003E\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cdiv\u003E\n\t\t\u003Cp\u003EOn the basis of the information above, I confirm my agreement to participate in the research “\u003Cstrong\u003EStudy of Food Preferences\u003C\u002Fstrong\u003E”, and I authorise:\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cform id=\"consent_form\"\u003E\n\t\t\t\u003Cinput type=\"checkbox\" name=\"consent_form1\" id=\"consent_form1\" required\u003E\n\t\t\t\u003Clabel for=\"consent_form1\"\u003E\n               The use of data for scientific purposes, and the publication of the results of this research in scientific reviews and books, on the understanding that these data will remain anonymous and that no information will be provided on my identity.\u003C\u002Flabel\u003E\u003Cbr\u003E\n\t\t\t\u003Cbr\u003E\n\t\t\t\u003Cinput type=\"checkbox\" name=\"consent_form2\" id=\"consent_form2\" required\u003E\n\t\t\t\u003Clabel for=\"consent_form2\"\u003E\n               The use of data for educational purposes (lectures and seminars for students and professionals who are bound by professional secrecy).\u003C\u002Flabel\u003E\n\t\t\u003C\u002Fform\u003E\n\t\t\n\t\t\u003Cp\u003EI have \u003Cstrong\u003Evoluntarily\u003C\u002Fstrong\u003E chosen to participate in this research. I have been informed that I can withdraw at any moment without providing a justification.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003EThis consent form does not relieve the organisers of the research from their responsibilities. I retain all my rights guaranteed by law.\u003C\u002Fp\u003E\n\t\t\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cbr\u003E\n\t\u003Cbr\u003E\n\t\n\t\u003Cdiv\u003E\n\t\t\u003Cstrong\u003ERESEARCHERS COMMITMENT\u003C\u002Fstrong\u003E\u003Cbr\u003E\n\t    \u003Cbr\u003E\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cdiv\u003E\n\n\t\t\u003Cp\u003EThe researchers in charge of this project confirm that the information that appear on this consent form describe the research project accurately.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003EThey commit themselves to proceed to this study in accordance with the ethics norms regarding research projects that involve human participants, in pursuance of the \u003Ci\u003EEthical code relative to research within the Faculty of psychology and educational sciences\u003C\u002Fi\u003E, and the \u003Ci\u003EDirectives relative to integrity in the domain of scientific research and to the procedures in case of violation of integrity\u003C\u002Fi\u003E of the University of Geneva.\u003C\u002Fp\u003E\n\t\n\t\u003C\u002Fdiv\u003E\n\n\u003C\u002Fmain\u003E\n\n\u003Cfooter style=\"margin-left: auto; margin-right: 0\"\u003E\n    \u003Cbutton type=\"submit\" form=\"consent_form\"\u003EContinue &#8594\u003C\u002Fbutton\u003E\n\u003C\u002Ffooter\u003E",
+          "content": "\u003Cmain style=\"width: 60%; margin: auto; text-align: left\"\u003E\n  \u003Cdiv\u003E\n      \u003Cimg src=\"${ this.files['section_psy_noir.png'] }\" style=\"width: 200px; height: 100px\" id=\"hp\"\u002F\u003E\u003C\u002Fimg\u003E\n\t\u003C\u002Fdiv\u003E\n\t  \u003Cdiv\u003E\n\t    \u003Cstrong\u003ERESEARCH\u003C\u002Fstrong\u003E\u003Cbr\u003E\n        Study of Food Preferences\u003Cbr\u003E\n\t\t\u003Cbr\u003E\n\t    \u003Cstrong\u003EIN CHARGE OF THE RESEARCH\u003C\u002Fstrong\u003E\u003Cbr\u003E\n        Prof. David Sander, Full Professor\u003Cbr\u003E\n        Dr. Eva Pool, Senior Researcher and Lecturer\u003Cbr\u003E\n        Alessio Giarrizzo, PhD Student and Teaching Assistant\u003Cbr\u003E\n        Department of Psychology, University of Geneva\u003Cbr\u003E\n\t\t\t\tLaboratory for the Study of Emotion Elicitation and Expression \u003Cbr\u003E\n\t\t\t\tBoulevard du Pont-d'Arve 40, 1205 Geneva, Switzerland\u003Cbr\u003E\n\t\t\u003Cbr\u003E\n\t\t\u003Cbr\u003E\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cdiv\u003E\n\t\t\u003Cstrong\u003EINFORMATION TO PARTICIPANTS AND PARTICIPATION CONSENT\u003C\u002Fstrong\u003E\u003Cbr\u003E\n\t    \u003Cbr\u003E\n\t\t\u003Cbr\u003E\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cdiv\u003E\n\t\t\u003Cstrong\u003EInformation to Participants\u003C\u002Fstrong\u003E\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cdiv\u003E\n\t\t\u003Cp\u003E\u003Cstrong\u003EGeneral aims of the research:\u003C\u002Fstrong\u003E measuring food preferences through choices.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003EProcedure: the study consists of four phases:\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cul\u003E\n\t\t\t\u003Cli\u003EIn the first phase, you will be asked several personal information. \u003C\u002Fli\u003E\n\t\n\t\t\t\u003Cli\u003EIn the second phase, we will present you a set of food items that you will have to evaluate according to your preferences;\u003C\u002Fli\u003E\n\t\t\t\n\t\t\t\u003Cli\u003EIn the third phase, you will perform a task consisting of choices between different snacks composed of the food items you will have evaluated in the second phase;\u003C\u002Fli\u003E\n\t\t\t\n\t\t\t\u003Cli\u003EIn the fourth and final phase, you will answer a set of questions about your emotions and food habits.\u003C\u002Fli\u003E\n\t\t\t\n\t    \u003C\u002Ful\u003E\n\t\t\n\t\t\u003Cp\u003EThe total duration of the experiment is approximately 40 minutes. However, you can choose to terminate the experiment at any moment without giving any justification.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003E\u003Cstrong\u003EData protection:\u003C\u002Fstrong\u003E your answers will be recorded and stored in a completely anonymous manner on a British server belonging to the Open Science Ltd. company. This company is committed to not sharing your data with any third party, and their data storage methods are compliant with the European General Data Protection Regulation (GDPR). Moreover, Open Science Ltd. will collect your IP address on temporary files which allow for the proper functioning of the servers. However, be aware that we will not have access to that information and that there is no way to link this information with the data we will be collecting during the experiment. The data we will collect will be exclusively accessible to the people listed in the section \u003Cstrong\u003EIN CHARGE OF THE RESEARCH\u003C\u002Fstrong\u003E; as well as to the server administrators. These data will subsequently be transferred to a server hosted in the University of Geneva, inside the Swiss Centre for Affective Sciences; and will be deleted from the British server within 3 months after the end of data collection. The data will then be stored indefinitely in the University. They can be reused in future research and uploaded on collaborative (“open science”) research platforms so as to be shared with other researchers. Since the data are completely anonymous, no link can be established between them and your personal identity.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003E\u003Cstrong\u003ECompensation for participants:\u003C\u002Fstrong\u003E you will receive a monetary compensation of 12.50 Swiss Francs for the duration of the experiment, converted to the currency used by the platform Prolific.co.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003E\u003Cstrong\u003EInconvenience and potential risks for the participants:\u003C\u002Fstrong\u003E we do not think that this experiment would result in any risk for your health.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003E\u003Cstrong\u003EAccess to the research outcomes:\u003C\u002Fstrong\u003E in the event you would be interested in the results of this research, you can contact the people listed below from May 15th, 2021.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003E\u003Cstrong\u003EContacts:\u003C\u002Fstrong\u003E Prof. David Sander (\u003Ca href=\"mailto:david.sander@unige.ch\"\u003Edavid.sander@unige.ch\u003C\u002Fa\u003E), Dr. Eva Pool (\u003Ca href=\"mailto:eva.pool@unige.ch\"\u003Eeva.pool@unige.ch\u003C\u002Fa\u003E), Alessio Giarrizzo (\u003Ca href=\"mailto:alessio.giarrizzo@unige.ch\"\u003Ealessio.giarrizzo@unige.ch\u003C\u002Fa\u003E).\u003C\u002Fp\u003E\n\t\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cbr\u003E\n\t\u003Cbr\u003E\n\t\n\t\u003Cdiv\u003E\n\t    \u003Cstrong\u003EParticipation Consent\u003C\u002Fstrong\u003E\u003Cbr\u003E\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cdiv\u003E\n\t\t\u003Cp\u003EOn the basis of the information above, I confirm my agreement to participate in the research “\u003Cstrong\u003EStudy of Food Preferences\u003C\u002Fstrong\u003E”, and I authorise:\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cform id=\"consent_form\"\u003E\n\t\t\t\u003Cinput type=\"checkbox\" name=\"consent_form1\" id=\"consent_form1\" required\u003E\n\t\t\t\u003Clabel for=\"consent_form1\"\u003E\n               The use of data for scientific purposes, and the publication of the results of this research in scientific reviews and books, on the understanding that these data will remain anonymous and that no information will be provided on my identity.\u003C\u002Flabel\u003E\u003Cbr\u003E\n\t\t\t\u003Cbr\u003E\n\t\t\t\u003Cinput type=\"checkbox\" name=\"consent_form2\" id=\"consent_form2\" required\u003E\n\t\t\t\u003Clabel for=\"consent_form2\"\u003E\n               The use of data for educational purposes (lectures and seminars for students and professionals who are bound by professional secrecy).\u003C\u002Flabel\u003E\n\t\t\u003C\u002Fform\u003E\n\t\t\n\t\t\u003Cp\u003EI have \u003Cstrong\u003Evoluntarily\u003C\u002Fstrong\u003E chosen to participate in this research. I have been informed that I can withdraw at any moment without providing a justification.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003EThis consent form does not relieve the organisers of the research from their responsibilities. I retain all my rights guaranteed by law.\u003C\u002Fp\u003E\n\t\t\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cbr\u003E\n\t\u003Cbr\u003E\n\t\n\t\u003Cdiv\u003E\n\t\t\u003Cstrong\u003ERESEARCHERS COMMITMENT\u003C\u002Fstrong\u003E\u003Cbr\u003E\n\t    \u003Cbr\u003E\n\t\u003C\u002Fdiv\u003E\n\t\n\t\u003Cdiv\u003E\n\n\t\t\u003Cp\u003EThe researchers in charge of this project confirm that the information that appear on this consent form describe the research project accurately.\u003C\u002Fp\u003E\n\t\t\n\t\t\u003Cp\u003EThey commit themselves to proceed to this study in accordance with the ethics norms regarding research projects that involve human participants, in pursuance of the \u003Ci\u003EEthical code relative to research within the Faculty of psychology and educational sciences\u003C\u002Fi\u003E, and the \u003Ci\u003EDirectives relative to integrity in the domain of scientific research and to the procedures in case of violation of integrity\u003C\u002Fi\u003E of the University of Geneva.\u003C\u002Fp\u003E\n\t\n\t\u003C\u002Fdiv\u003E\n\n\u003C\u002Fmain\u003E\n\n\u003Cfooter style=\"margin-left: auto; margin-right: 0\"\u003E\n    \u003Cbutton type=\"submit\" form=\"consent_form\"\u003EContinue &#8594\u003C\u002Fbutton\u003E\n\u003C\u002Ffooter\u003E",
           "scrollTop": true,
           "files": {
             "section_psy_noir.png": "embedded\u002Ff3f827ad609ce548162e9057533efb59cb20b2af86326981a585c3c4e478f68f.png"
@@ -11629,15 +11629,16 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                           }
                         },
                         {
-                          "type": "lab.html.Screen",
+                          "type": "lab.html.Form",
+                          "content": "\u003Cmain class=\"content-horizontal-center content-vertical-center\"\u003E\n  \u003Csection id=\"Break1_question\" class=\"w-l\" style=\"font-size: 1.2rem\"\u003E\n    \u003Cp\u003EGood job!\u003C\u002Fp\u003E\n    \u003Cp\u003EYou completed 1 of 2 blocks.\u003C\u002Fp\u003E\n\u003Cbr\u003E\n\u003Cbr\u003E\n   \u003Csection class=\"w-l\" style=\"text-align: center;\"\u003E\n    \u003Cform id=\"Break1_form\"\u003E\n      \u003Clabel for=\"break1\"\u003EHow do you feel now? Please insert a short text.\u003C\u002Flabel\u003E\n      \u003Cinput type=\"break1\" name=\"break1\" id=\"break1\"\u003E\n    \u003C\u002Fform\u003E\n  \u003C\u002Fsection\u003E\n\u003Cbr\u003E\n\u003Cbr\u003E\n    \u003Csection\u003E\n    \u003Cp\u003EFeel free to take a short break now if you need to! It is important to us that you remain focused throughout the whole task.\u003C\u002Fp\u003E\n    \u003Cp\u003EYou can then click “Continue” to resume the experiment.\u003C\u002Fp\u003E\n  \u003C\u002Fsection\u003E\n\u003C\u002Fmain\u003E\n\u003Cfooter style=\"margin-left:auto; margin-right:0\"\u003E\n  \u003Cbutton type=\"submit\" form=\"Break1_form\"\u003EContinue &#8594\u003C\u002Fbutton\u003E\n\u003C\u002Ffooter\u003E",
+                          "scrollTop": true,
                           "files": {},
                           "responses": {
                             "": ""
                           },
                           "parameters": {},
                           "messageHandlers": {},
-                          "title": "Break1",
-                          "content": "\u003Cmain class=\"content-horizontal-center content-vertical-center\"\u003E\n  \u003Csection id=\"Break1_question\" class=\"w-l\" style=\"font-size: 1.2rem\"\u003E\n    \u003Cp\u003EGood job!\u003C\u002Fp\u003E\n    \u003Cp\u003EYou completed 1 of 2 blocks.\u003C\u002Fp\u003E\n\u003Cbr\u003E\n\u003Cbr\u003E\n   \u003Csection class=\"w-l\" style=\"text-align: center;\"\u003E\n    \u003Cform id=\"Break1_form\"\u003E\n      \u003Clabel for=\"break1\"\u003EHow do you feel now? Please insert a short text.\u003C\u002Flabel\u003E\n      \u003Cinput type=\"break1\" name=\"break1\" id=\"break1\"\u003E\n    \u003C\u002Fform\u003E\n  \u003C\u002Fsection\u003E\n\u003Cbr\u003E\n\u003Cbr\u003E\n    \u003Csection\u003E\n    \u003Cp\u003EFeel free to take a short break now if you need to! It is important to us that you remain focused throughout the whole task.\u003C\u002Fp\u003E\n    \u003Cp\u003EYou can then click “Continue” to resume the experiment.\u003C\u002Fp\u003E\n  \u003C\u002Fsection\u003E\n\u003C\u002Fmain\u003E\n\u003Cfooter style=\"margin-left:auto; margin-right:0\"\u003E\n  \u003Cbutton type=\"submit\" form=\"Break1_form\"\u003EContinue &#8594\u003C\u002Fbutton\u003E\n\u003C\u002Ffooter\u003E"
+                          "title": "Break"
                         },
                         {
                           "type": "lab.html.Screen",
@@ -11803,7 +11804,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB01.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -11813,7 +11814,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB07.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -11823,7 +11824,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB12.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -11833,7 +11834,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB14.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -11843,7 +11844,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB15.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -11853,7 +11854,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB16.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -11863,7 +11864,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB17.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     }
                                   ],
                                   "sample": {
@@ -13942,7 +13943,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB01.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -13952,7 +13953,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB04.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -13962,7 +13963,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB07.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -13972,7 +13973,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB10.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -13982,7 +13983,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB12.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -13992,7 +13993,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB13.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -14002,7 +14003,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB14.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     }
                                   ],
                                   "sample": {
@@ -18038,7 +18039,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB01.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -18048,7 +18049,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB03.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -18058,7 +18059,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB05.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -18068,7 +18069,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB07.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -18078,7 +18079,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB09.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -18088,7 +18089,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB11.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -18098,7 +18099,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB12.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     }
                                   ],
                                   "sample": {
@@ -20133,7 +20134,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB01.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -20143,7 +20144,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB02.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -20153,7 +20154,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB04.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -20163,7 +20164,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB06.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -20173,7 +20174,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB07.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -20183,7 +20184,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB08.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -20193,7 +20194,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB10.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     }
                                   ],
                                   "sample": {
@@ -33691,15 +33692,16 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                           }
                         },
                         {
-                          "type": "lab.html.Screen",
+                          "type": "lab.html.Form",
+                          "content": "\u003Cmain class=\"content-horizontal-center content-vertical-center\"\u003E\n  \u003Csection id=\"Break1_question\" class=\"w-l\" style=\"font-size: 1.2rem\"\u003E\n    \u003Cp\u003EGood job!\u003C\u002Fp\u003E\n    \u003Cp\u003EYou completed 1 of 2 blocks.\u003C\u002Fp\u003E\n\u003Cbr\u003E\n\u003Cbr\u003E\n   \u003Csection class=\"w-l\" style=\"text-align: center;\"\u003E\n    \u003Cform id=\"Break1_form\"\u003E\n      \u003Clabel for=\"break1\"\u003EHow do you feel now? Please insert a short text.\u003C\u002Flabel\u003E\n      \u003Cinput type=\"break1\" name=\"break1\" id=\"break1\"\u003E\n    \u003C\u002Fform\u003E\n  \u003C\u002Fsection\u003E\n\u003Cbr\u003E\n\u003Cbr\u003E\n    \u003Csection\u003E\n    \u003Cp\u003EFeel free to take a short break now if you need to! It is important to us that you remain focused throughout the whole task.\u003C\u002Fp\u003E\n    \u003Cp\u003EYou can then click “Continue” to resume the experiment.\u003C\u002Fp\u003E\n  \u003C\u002Fsection\u003E\n\u003C\u002Fmain\u003E\n\u003Cfooter style=\"margin-left:auto; margin-right:0\"\u003E\n  \u003Cbutton type=\"submit\" form=\"Break1_form\"\u003EContinue &#8594\u003C\u002Fbutton\u003E\n\u003C\u002Ffooter\u003E",
+                          "scrollTop": true,
                           "files": {},
                           "responses": {
                             "": ""
                           },
                           "parameters": {},
                           "messageHandlers": {},
-                          "title": "Break1",
-                          "content": "\u003Cmain class=\"content-horizontal-center content-vertical-center\"\u003E\n  \u003Csection id=\"Break1_question\" class=\"w-l\" style=\"font-size: 1.2rem\"\u003E\n    \u003Cp\u003EGood job!\u003C\u002Fp\u003E\n    \u003Cp\u003EYou completed 1 of 2 blocks.\u003C\u002Fp\u003E\n\u003Cbr\u003E\n\u003Cbr\u003E\n   \u003Csection class=\"w-l\" style=\"text-align: center;\"\u003E\n    \u003Cform id=\"Break1_form\"\u003E\n      \u003Clabel for=\"break1\"\u003EHow do you feel now? Please insert a short text.\u003C\u002Flabel\u003E\n      \u003Cinput type=\"break1\" name=\"break1\" id=\"break1\"\u003E\n    \u003C\u002Fform\u003E\n  \u003C\u002Fsection\u003E\n\u003Cbr\u003E\n\u003Cbr\u003E\n    \u003Csection\u003E\n    \u003Cp\u003EFeel free to take a short break now if you need to! It is important to us that you remain focused throughout the whole task.\u003C\u002Fp\u003E\n    \u003Cp\u003EYou can then click “Continue” to resume the experiment.\u003C\u002Fp\u003E\n  \u003C\u002Fsection\u003E\n\u003C\u002Fmain\u003E\n\u003Cfooter style=\"margin-left:auto; margin-right:0\"\u003E\n  \u003Cbutton type=\"submit\" form=\"Break1_form\"\u003EContinue &#8594\u003C\u002Fbutton\u003E\n\u003C\u002Ffooter\u003E"
+                          "title": "Break"
                         },
                         {
                           "type": "lab.html.Screen",
@@ -33865,7 +33867,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB01.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -33875,7 +33877,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB07.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -33885,7 +33887,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB12.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -33895,7 +33897,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB14.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -33905,7 +33907,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB15.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -33915,7 +33917,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB16.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -33925,7 +33927,7 @@ if (transmitPlugins.length > 0) {
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB17.png",
                                       "sublock": 1,
-                                      "block": "1"
+                                      "block": "2"
                                     }
                                   ],
                                   "sample": {
@@ -36004,7 +36006,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB01.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -36014,7 +36016,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB04.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -36024,7 +36026,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB07.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -36034,7 +36036,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB10.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -36044,7 +36046,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB12.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -36054,7 +36056,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB13.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -36064,7 +36066,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB14.png",
                                       "sublock": 2,
-                                      "block": "1"
+                                      "block": "2"
                                     }
                                   ],
                                   "sample": {
@@ -40190,7 +40192,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB01.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -40200,7 +40202,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB03.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -40210,7 +40212,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB05.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -40220,7 +40222,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB07.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -40230,7 +40232,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB09.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -40240,7 +40242,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB11.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -40250,7 +40252,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB12.png",
                                       "sublock": 3,
-                                      "block": "1"
+                                      "block": "2"
                                     }
                                   ],
                                   "sample": {
@@ -42339,7 +42341,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB01.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -42349,7 +42351,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB02.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -42359,7 +42361,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB04.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -42369,7 +42371,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB06.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -42379,7 +42381,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB07.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -42389,7 +42391,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB08.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     },
                                     {
                                       "RefA": 0,
@@ -42399,7 +42401,7 @@ if(this.options.datastore.extract('duration', 'choice')[this.state.trial_count-1
                                       "Ref_PB": "PB18.png",
                                       "Var_PB": "PB10.png",
                                       "sublock": 4,
-                                      "block": "1"
+                                      "block": "2"
                                     }
                                   ],
                                   "sample": {
